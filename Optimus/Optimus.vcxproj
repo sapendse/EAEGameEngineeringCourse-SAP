@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profiler|Win32">
+      <Configuration>Profiler</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7A4A40FB-9123-42BC-8824-EF3BCA6697F8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Optimus</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profiler|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profiler|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath);..\Optimus\_Source</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profiler|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath);..\Optimus\_Source</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath);..\Optimus\_Source</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\Lib\x86;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINSOCKAPI_;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../;$(DXSDK_DIR)Include\;..\Optimus\External\libconfig++;..\Optimus\External\FMOD;..\Optimus\External\RakNet\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;fmodex_vc.lib;RakNet_D.lib;ws2_32.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x86;..\Optimus\External\FMOD;..\Optimus\External\RakNet;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy /y “..\Optimus\External\FMOD\fmodex.dll” “$(OutputPath)”</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profiler|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_PROFILER;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../;$(DXSDK_DIR)Include\;..\Optimus\External\libconfig++;..\Optimus\External\FMOD</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;fmodex_vc.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x86;..\Optimus\External\FMOD;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy /y “..\Optimus\External\FMOD\fmodex.dll” “$(OutputPath)”</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../;$(DXSDK_DIR)Include\;..\Optimus\External\libconfig++;..\Optimus\External\FMOD</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;fmodex_vc.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)Lib\x86;..\Optimus\External\FMOD;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy /y “..\Optimus\External\FMOD\fmodex.dll” “$(OutputPath)”</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="_Source\Actor\Actor.cpp" />
+    <ClCompile Include="_Source\Collision\Collision.cpp" />
+    <ClCompile Include="_Source\Configuration\Configuration.cpp" />
+    <ClCompile Include="_Source\DebugConsole\DebugConsole.cpp" />
+    <ClCompile Include="_Source\Helpers\Logging.cpp" />
+    <ClCompile Include="_Source\Loop\MainLoop.cpp" />
+    <ClCompile Include="_Source\Math\Matrix.cpp" />
+    <ClCompile Include="_Source\Math\Vector3.cpp" />
+    <ClCompile Include="_Source\MemoryManager\BitField.cpp" />
+    <ClCompile Include="_Source\MemoryManager\MemoryPool.cpp" />
+    <ClCompile Include="_Source\Messaging\Messaging.cpp" />
+    <ClCompile Include="_Source\Networking\NetworkManager.cpp" />
+    <ClCompile Include="_Source\PathFinding\WayPointGraph.cpp" />
+    <ClCompile Include="_Source\PathFinding\WayPointNode.cpp" />
+    <ClCompile Include="_Source\Physics\Physics.cpp" />
+    <ClCompile Include="_Source\Profiling\Profiling.cpp" />
+    <ClCompile Include="_Source\Renderer\cCamera.cpp" />
+    <ClCompile Include="_Source\Renderer\cFPSCamera.cpp" />
+    <ClCompile Include="_Source\Renderer\cLighting.cpp" />
+    <ClCompile Include="_Source\Renderer\cMainWindow.cpp" />
+    <ClCompile Include="_Source\Renderer\cMesh.cpp" />
+    <ClCompile Include="_Source\Renderer\cRenderer.cpp" />
+    <ClCompile Include="_Source\Renderer\cScene.cpp" />
+    <ClCompile Include="_Source\Renderer\cSprite.cpp" />
+    <ClCompile Include="_Source\Renderer\cText.cpp" />
+    <ClCompile Include="_Source\Renderer\cTime.cpp" />
+    <ClCompile Include="_Source\Renderer\cTPSCamera.cpp" />
+    <ClCompile Include="_Source\Renderer\EntryPoint.cpp" />
+    <ClCompile Include="_Source\Renderer\File Parsers\cEffectsParser.cpp" />
+    <ClCompile Include="_Source\Renderer\Renderer.cpp" />
+    <ClCompile Include="_Source\Renderer\UserInput.cpp" />
+    <ClCompile Include="_Source\Renderer\VertexFormat.cpp" />
+    <ClCompile Include="_Source\Sounds\SoundManager.cpp" />
+    <ClCompile Include="_Source\Timer\Clock.cpp" />
+    <ClCompile Include="_Source\Timer\TimeSystem.cpp" />
+    <ClCompile Include="_Source\TriggerBox\TriggerBox.cpp" />
+    <ClCompile Include="_Source\Triggers\Triggers.cpp" />
+    <ClCompile Include="_Source\Utilities\DebugLines.cpp" />
+    <ClCompile Include="_Source\World\OctreeBuilder.cpp" />
+    <ClCompile Include="_Source\World\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_Source\Actor\Actor.h" />
+    <ClInclude Include="_Source\Actor\ActorController.h" />
+    <ClInclude Include="_Source\Actor\CollisionController.h" />
+    <ClInclude Include="_Source\Actor\GameObject.h" />
+    <ClInclude Include="_Source\Actor\MessageCallback.h" />
+    <ClInclude Include="_Source\Actor\TriggerCallback.h" />
+    <ClInclude Include="_Source\Collision\AABB.h" />
+    <ClInclude Include="_Source\Collision\Collision.h" />
+    <ClInclude Include="_Source\Configuration\Configuration.h" />
+    <ClInclude Include="_Source\DebugConsole\Button.h" />
+    <ClInclude Include="_Source\DebugConsole\CheckBox.h" />
+    <ClInclude Include="_Source\DebugConsole\DebugConsole.h" />
+    <ClInclude Include="_Source\DebugConsole\Slider.h" />
+    <ClInclude Include="_Source\DebugConsole\TextField.h" />
+    <ClInclude Include="_Source\Helpers\Logging.h" />
+    <ClInclude Include="_Source\Helpers\SharedPointer.h" />
+    <ClInclude Include="_Source\Loop\Optimus.h" />
+    <ClInclude Include="_Source\Math\FastVector3.h" />
+    <ClInclude Include="_Source\Math\Matrix.h" />
+    <ClInclude Include="_Source\Math\RingBuffer.h" />
+    <ClInclude Include="_Source\Math\Vector3.h" />
+    <ClInclude Include="_Source\MemoryManager\BitField.h" />
+    <ClInclude Include="_Source\MemoryManager\MemoryPool.h" />
+    <ClInclude Include="_Source\Messaging\Messaging.h" />
+    <ClInclude Include="_Source\Networking\NetworkManager.h" />
+    <ClInclude Include="_Source\PathFinding\WayPointGraph.h" />
+    <ClInclude Include="_Source\PathFinding\WayPointNode.h" />
+    <ClInclude Include="_Source\Physics\Physics.h" />
+    <ClInclude Include="_Source\Profiling\Profiling.h" />
+    <ClInclude Include="_Source\Renderer\cCamera.h" />
+    <ClInclude Include="_Source\Renderer\cFPSCamera.h" />
+    <ClInclude Include="_Source\Renderer\cLighting.h" />
+    <ClInclude Include="_Source\Renderer\cMainWindow.h" />
+    <ClInclude Include="_Source\Renderer\cMesh.h" />
+    <ClInclude Include="_Source\Renderer\cRenderer.h" />
+    <ClInclude Include="_Source\Renderer\cScene.h" />
+    <ClInclude Include="_Source\Renderer\cSprite.h" />
+    <ClInclude Include="_Source\Renderer\cText.h" />
+    <ClInclude Include="_Source\Renderer\cTime.h" />
+    <ClInclude Include="_Source\Renderer\cTPSCamera.h" />
+    <ClInclude Include="_Source\Renderer\EntryPoint.h" />
+    <ClInclude Include="_Source\Renderer\File Parsers\cEffectsParser.h" />
+    <ClInclude Include="_Source\Renderer\Initialization.h" />
+    <ClInclude Include="_Source\Renderer\Renderer.h" />
+    <ClInclude Include="_Source\Renderer\UserInput.h" />
+    <ClInclude Include="_Source\Renderer\VertexFormat.h" />
+    <ClInclude Include="_Source\Sounds\SoundManger.h" />
+    <ClInclude Include="_Source\Timer\Clock.h" />
+    <ClInclude Include="_Source\Timer\TimeSystem.h" />
+    <ClInclude Include="_Source\TriggerBox\TriggerBox.h" />
+    <ClInclude Include="_Source\Triggers\Triggers.h" />
+    <ClInclude Include="_Source\Utilities\DebugLines.h" />
+    <ClInclude Include="_Source\Utilities\New.h" />
+    <ClInclude Include="_Source\Utilities\Target.h" />
+    <ClInclude Include="_Source\Utilities\Target.Win32.h" />
+    <ClInclude Include="_Source\Utilities\Utilities.h" />
+    <ClInclude Include="_Source\World\OctreeBuilder.h" />
+    <ClInclude Include="_Source\World\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Source\Helpers\SharedPointer.inl" />
+    <None Include="_Source\Math\Vector3.inl" />
+    <None Include="_Source\Timer\Clock.inl" />
+    <None Include="_Source\Utilities\Utilities.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

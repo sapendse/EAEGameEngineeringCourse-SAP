@@ -1,0 +1,11 @@
+Effect to use:
+../Assets/Effects/effectSpecular.txt
+
+Texture to use-
+../Assets/Textures/example5.png
+
+Spec Expo|
+8
+
+Alpha Value=
+0.2

@@ -1,0 +1,11 @@
+Effect to use:
+../Assets/Effects/effectPartial.txt
+
+Texture to use-
+../Assets/Textures/example3.png
+
+Spec Expo|
+50
+
+Alpha Value=
+0.4

@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="_Source\Actor\TriggerCallback.h">
+      <Filter>Common\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Actor\Actor.h">
+      <Filter>Common\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Actor\ActorController.h">
+      <Filter>Common\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Actor\CollisionController.h">
+      <Filter>Common\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Actor\GameObject.h">
+      <Filter>Common\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Actor\MessageCallback.h">
+      <Filter>Common\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Collision\AABB.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Collision\Collision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Configuration\Configuration.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Helpers\SharedPointer.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Loop\Optimus.h">
+      <Filter>MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Math\FastVector3.h">
+      <Filter>Common\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Math\Matrix.h">
+      <Filter>Common\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Math\RingBuffer.h">
+      <Filter>Common\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Math\Vector3.h">
+      <Filter>Common\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\MemoryManager\BitField.h">
+      <Filter>Common\MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\MemoryManager\MemoryPool.h">
+      <Filter>Common\MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Messaging\Messaging.h">
+      <Filter>Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\World\World.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Utilities\New.h">
+      <Filter>Common\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Utilities\Target.h">
+      <Filter>Common\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Utilities\Target.Win32.h">
+      <Filter>Common\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Utilities\Utilities.h">
+      <Filter>Common\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Triggers\Triggers.h">
+      <Filter>Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Timer\TimeSystem.h">
+      <Filter>TimeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Timer\Clock.h">
+      <Filter>TimeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Profiling\Profiling.h">
+      <Filter>Profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Physics\Physics.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\File Parsers\cEffectsParser.h">
+      <Filter>Renderer\RenderingEngine\File Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cCamera.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cLighting.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cMainWindow.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cMesh.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cRenderer.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cScene.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cTime.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\Initialization.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\UserInput.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\VertexFormat.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\EntryPoint.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cSprite.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cText.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\DebugConsole\DebugConsole.h">
+      <Filter>DebugConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\DebugConsole\Slider.h">
+      <Filter>DebugConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\DebugConsole\Button.h">
+      <Filter>DebugConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\DebugConsole\TextField.h">
+      <Filter>DebugConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\DebugConsole\CheckBox.h">
+      <Filter>DebugConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cFPSCamera.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\World\OctreeBuilder.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Renderer\cTPSCamera.h">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Helpers\Logging.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\TriggerBox\TriggerBox.h">
+      <Filter>Common\TriggerBox</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Utilities\DebugLines.h">
+      <Filter>Common\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\PathFinding\WayPointNode.h">
+      <Filter>Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\PathFinding\WayPointGraph.h">
+      <Filter>Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Sounds\SoundManger.h">
+      <Filter>Sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="_Source\Networking\NetworkManager.h">
+      <Filter>Networking</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{3489cf37-058e-499c-9565-25ba4df0309d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{9ac44d25-40bc-4d00-b85d-dec08e556d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{1643efbf-e3cc-4fb9-b0d3-b03a83ab6fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{dd0a3fca-81b4-442c-bb55-f7316129f54f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainLoop">
+      <UniqueIdentifier>{8a500e5b-da72-48dc-b16c-4d605fd5964e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Messaging">
+      <UniqueIdentifier>{16e7b5ec-000b-482b-bff6-ef936c70e3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{5d8c5318-d0d2-4524-b41b-2d74f6b24735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Triggers">
+      <UniqueIdentifier>{661831eb-1af9-4224-b8d0-c5c19f279c20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TimeSystem">
+      <UniqueIdentifier>{da810259-01a1-4e2f-b4f1-0dbe40bce68d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{37cd631d-8ed7-4bb2-8865-7123fa5ca8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profiling">
+      <UniqueIdentifier>{cc4cfda2-64ed-4b4b-9a94-ffa8d7e46599}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{ee72a418-4e57-4ddd-89b5-47bdc6d5adef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Actor">
+      <UniqueIdentifier>{eebfd7b6-ff8a-4898-9fe0-985b5d3e3a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Maths">
+      <UniqueIdentifier>{67a199da-c369-4d85-a496-f3ce2628f48f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MemoryManager">
+      <UniqueIdentifier>{e064c73e-83a5-456a-b314-ade7544135f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Utilities">
+      <UniqueIdentifier>{ef2e25d9-c11e-4c85-aca2-dfd5b4ed6b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\RenderingEngine">
+      <UniqueIdentifier>{6072529d-1aa7-4ec4-a7bd-ef2a78165d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\RenderingEngine\File Parsers">
+      <UniqueIdentifier>{a86d40f9-7cc6-436e-b34a-f4b4d6771898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DebugConsole">
+      <UniqueIdentifier>{6cb18527-3062-4820-9afc-f97728f5f6cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\TriggerBox">
+      <UniqueIdentifier>{4b55b6b5-b355-4eb1-977e-00ddf355ff29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pathfinding">
+      <UniqueIdentifier>{11268dac-dc86-405f-9ff3-05a5d5c1c5c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sounds">
+      <UniqueIdentifier>{8590bf6d-a83a-474f-9620-d9cc125abe92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Networking">
+      <UniqueIdentifier>{b845385c-34bb-4955-b3f4-e54877e3ee21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_Source\Actor\Actor.cpp">
+      <Filter>Common\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Collision\Collision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Configuration\Configuration.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Loop\MainLoop.cpp">
+      <Filter>MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Math\Matrix.cpp">
+      <Filter>Common\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Math\Vector3.cpp">
+      <Filter>Common\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\MemoryManager\BitField.cpp">
+      <Filter>Common\MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\MemoryManager\MemoryPool.cpp">
+      <Filter>Common\MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Messaging\Messaging.cpp">
+      <Filter>Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\World\World.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Triggers\Triggers.cpp">
+      <Filter>Triggers</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Timer\Clock.cpp">
+      <Filter>TimeSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Timer\TimeSystem.cpp">
+      <Filter>TimeSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\Renderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Profiling\Profiling.cpp">
+      <Filter>Profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Physics\Physics.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\File Parsers\cEffectsParser.cpp">
+      <Filter>Renderer\RenderingEngine\File Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cCamera.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cLighting.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cMainWindow.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cMesh.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cRenderer.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cScene.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cTime.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\EntryPoint.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\UserInput.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\VertexFormat.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cSprite.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cText.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\DebugConsole\DebugConsole.cpp">
+      <Filter>DebugConsole</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cFPSCamera.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\World\OctreeBuilder.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Renderer\cTPSCamera.cpp">
+      <Filter>Renderer\RenderingEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Helpers\Logging.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\TriggerBox\TriggerBox.cpp">
+      <Filter>Common\TriggerBox</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Utilities\DebugLines.cpp">
+      <Filter>Common\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\PathFinding\WayPointNode.cpp">
+      <Filter>Pathfinding</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\PathFinding\WayPointGraph.cpp">
+      <Filter>Pathfinding</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Sounds\SoundManager.cpp">
+      <Filter>Sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="_Source\Networking\NetworkManager.cpp">
+      <Filter>Networking</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Source\Helpers\SharedPointer.inl">
+      <Filter>Helpers</Filter>
+    </None>
+    <None Include="_Source\Math\Vector3.inl">
+      <Filter>Common\Maths</Filter>
+    </None>
+    <None Include="_Source\Utilities\Utilities.inl">
+      <Filter>Common\Utilities</Filter>
+    </None>
+    <None Include="_Source\Timer\Clock.inl">
+      <Filter>TimeSystem</Filter>
+    </None>
+  </ItemGroup>
+</Project>

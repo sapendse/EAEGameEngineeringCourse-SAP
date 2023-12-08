@@ -1,0 +1,5 @@
+Mesh to use:
+sphere
+
+Material to use-
+../Assets/Materials/Material1.txt

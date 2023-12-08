@@ -1,0 +1,5 @@
+Name	  Vertex Shader	     		 	 Fragment Shader	   							Render State:
+Second	  ../Assets/VertexShaders/example.vp  ../Assets/FragmentShaders/shaderBinaryAlpha.fp  	BIN
+
+Expected textures-
+diffuse map

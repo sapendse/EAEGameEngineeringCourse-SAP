@@ -1,0 +1,5 @@
+Name	  Vertex Shader	     		 Fragment Shader	   		Render State:
+First	  ../Assets/VertexShaders/example.vp  ../Assets/FragmentShaders/example.fp  	NULL
+
+Expected textures-
+Normal map

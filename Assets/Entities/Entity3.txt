@@ -1,0 +1,5 @@
+Mesh to use:
+cube
+
+Material to use-
+../Assets/Materials/Material4.txt

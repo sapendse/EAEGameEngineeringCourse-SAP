@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Optimus", "Optimus\Optimus.vcxproj", "{7A4A40FB-9123-42BC-8824-EF3BCA6697F8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngineering3", "GameEngineering3\GameEngineering3.vcxproj", "{E25F8075-7EE5-43C9-9545-41D5C4AFCD9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7A4A40FB-9123-42BC-8824-EF3BCA6697F8} = {7A4A40FB-9123-42BC-8824-EF3BCA6697F8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FBXImporter", "FBXImporter\FBXImporter.vcxproj", "{3997EE49-39D3-46FC-BA17-41DE986B104F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WorldEditor", "WorldEditor\WorldEditor.vcxproj", "{0FD86997-70C7-44AC-B96E-C0D26FC838B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7A4A40FB-9123-42BC-8824-EF3BCA6697F8} = {7A4A40FB-9123-42BC-8824-EF3BCA6697F8}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Profiler|Win32 = Profiler|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A4A40FB-9123-42BC-8824-EF3BCA6697F8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7A4A40FB-9123-42BC-8824-EF3BCA6697F8}.Debug|Win32.Build.0 = Debug|Win32
+		{7A4A40FB-9123-42BC-8824-EF3BCA6697F8}.Profiler|Win32.ActiveCfg = Profiler|Win32
+		{7A4A40FB-9123-42BC-8824-EF3BCA6697F8}.Profiler|Win32.Build.0 = Profiler|Win32
+		{7A4A40FB-9123-42BC-8824-EF3BCA6697F8}.Release|Win32.ActiveCfg = Release|Win32
+		{7A4A40FB-9123-42BC-8824-EF3BCA6697F8}.Release|Win32.Build.0 = Release|Win32
+		{E25F8075-7EE5-43C9-9545-41D5C4AFCD9F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E25F8075-7EE5-43C9-9545-41D5C4AFCD9F}.Debug|Win32.Build.0 = Debug|Win32
+		{E25F8075-7EE5-43C9-9545-41D5C4AFCD9F}.Profiler|Win32.ActiveCfg = Profiler|Win32
+		{E25F8075-7EE5-43C9-9545-41D5C4AFCD9F}.Profiler|Win32.Build.0 = Profiler|Win32
+		{E25F8075-7EE5-43C9-9545-41D5C4AFCD9F}.Release|Win32.ActiveCfg = Release|Win32
+		{E25F8075-7EE5-43C9-9545-41D5C4AFCD9F}.Release|Win32.Build.0 = Release|Win32
+		{3997EE49-39D3-46FC-BA17-41DE986B104F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3997EE49-39D3-46FC-BA17-41DE986B104F}.Debug|Win32.Build.0 = Debug|Win32
+		{3997EE49-39D3-46FC-BA17-41DE986B104F}.Profiler|Win32.ActiveCfg = Profiler|Win32
+		{3997EE49-39D3-46FC-BA17-41DE986B104F}.Profiler|Win32.Build.0 = Profiler|Win32
+		{3997EE49-39D3-46FC-BA17-41DE986B104F}.Release|Win32.ActiveCfg = Release|Win32
+		{3997EE49-39D3-46FC-BA17-41DE986B104F}.Release|Win32.Build.0 = Release|Win32
+		{0FD86997-70C7-44AC-B96E-C0D26FC838B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FD86997-70C7-44AC-B96E-C0D26FC838B6}.Debug|Win32.Build.0 = Debug|Win32
+		{0FD86997-70C7-44AC-B96E-C0D26FC838B6}.Profiler|Win32.ActiveCfg = Release|Win32
+		{0FD86997-70C7-44AC-B96E-C0D26FC838B6}.Profiler|Win32.Build.0 = Release|Win32
+		{0FD86997-70C7-44AC-B96E-C0D26FC838B6}.Release|Win32.ActiveCfg = Release|Win32
+		{0FD86997-70C7-44AC-B96E-C0D26FC838B6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

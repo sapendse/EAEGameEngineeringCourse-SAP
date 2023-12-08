@@ -1,0 +1,15 @@
+Camera
+Position	Rotation_
+0.0 0.0 0.0	0.0
+
+Light
+Position	Colour	Intensity	AttFac=
+0.0 0.0 0.0   0.2 0.5 0.8   0.03 	 0.09
+
+Access Count > 1
+
+Mesh Count-
+1
+
+Meshes:
+../Assets/Meshes/player.bin

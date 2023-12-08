@@ -1,0 +1,5 @@
+Name	  Vertex Shader	     		 	 Fragment Shader	   							Render State:
+Second	  ../Assets/VertexShaders/example.vp  ../Assets/FragmentShaders/shaderPartialAlpha.fp  	PARTIAL
+
+Expected textures-
+diffuse map

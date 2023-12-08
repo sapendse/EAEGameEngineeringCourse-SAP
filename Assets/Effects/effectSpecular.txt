@@ -1,0 +1,5 @@
+Name	  Vertex Shader	     		 Fragment Shader	   		Render State:
+Second	  ../Assets/VertexShaders/example.vp  ../Assets/FragmentShaders/shaderSpecular.fp  	NULL
+
+Expected textures-
+diffuse map

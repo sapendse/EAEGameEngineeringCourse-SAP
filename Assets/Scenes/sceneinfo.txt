@@ -1,0 +1,13 @@
+Entities in scene( 3 )
+Name	  Position	   Rotation Solid:
+Entity1	  1.5 0.0 0.0      0.0      1
+Entity2	  -7.5 0.0 0.0     0.0      0
+Entity3	  0.5 0.0 -2.0     0.0      1
+
+Camera
+Position	Rotation_
+0.0 0.0 -10.0	0.0
+
+Light
+Position	Colour	      Intensity  AttFac=
+0.0 0.0 -3.0   0.2 0.5 0.8   0.5 	 0.09

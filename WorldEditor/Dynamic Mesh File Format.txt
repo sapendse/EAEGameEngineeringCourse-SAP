@@ -1,0 +1,11 @@
+-Number of TriggerBoxes
+-Positions And
+-Sizes of TriggerBoxes
+-Number of Dynamic Meshes
+-IDs of Dynamic Meshes
+-Number of Waypoint Nodes
+-Position of Waypoint Node
+-Number of Neighbours
+-Position of Neighbours
+-Number of Hard Surfaces
+-IDs of Hard Surface

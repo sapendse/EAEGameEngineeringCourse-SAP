@@ -1,0 +1,12 @@
+Mesh Count-119
+
+Meshes:
+../Assets/Meshes/Collision.bin
+
+Camera
+Position	Rotation_
+0.0 0.0 0.0	0.0
+
+Light
+Position	Colour	Intensity	AttFac=
+0.0 0.0 0.0   0.2 0.5 0.8   0.5 	 0.09

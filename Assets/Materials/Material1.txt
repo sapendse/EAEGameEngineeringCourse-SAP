@@ -1,0 +1,14 @@
+Effect to use:
+../Assets/Effects/effectPartial.txt
+
+Texture to use-
+../Assets/Textures/example5.png
+
+Normal map texture_
+../Assets/Textures/heightMap.png
+
+Spec Expo|
+5
+
+Alpha Value=
+1.0

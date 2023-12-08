@@ -1,0 +1,14 @@
+Effect to use:
+../Assets/Effects/effectSpecular.txt
+
+Texture to use-
+../Assets/Textures/example4.png
+
+Normal map texture_
+../Assets/Textures/heightMap.png
+
+Spec Expo|
+500
+
+Alpha Value=
+1.0

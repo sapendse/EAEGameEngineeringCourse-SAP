@@ -1,0 +1,38 @@
+#ifndef _TIMER_H_
+#define _TIMER_H_
+
+#include <windows.h>
+#include <assert.h>
+#include <limits.h>
+
+namespace DragonForge
+{
+	class Timer
+	{
+		public:
+		bool Initialize();
+
+		void CalcFrameTime();
+
+		unsigned int GetCurrentCounter_ms();
+		float GetLastFrame_ms();
+
+		inline float SecondsToMilliseconds( float i_Seconds ) 
+		{ 
+			return i_Seconds * 1000.0f; 
+		}
+
+		inline float PerSecondToPerMillisecond( float i_PerSecond ) 
+		{
+			return i_PerSecond / 1000.0f;
+		}
+
+		Timer()
+		{
+
+		}
+
+	};
+}
+
+#endif //_TIMER_H_
